@@ -3,14 +3,13 @@ package main
 import (
 	"bufio"
 	"bytes"
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"strings"
 )
 
+//Keybinding | type of vscodevim keybinding
 type Keybinding struct {
 	Before []string `json:"before"`
 	After  []string `json:"after"`
@@ -44,10 +43,10 @@ func splitFunc(data []byte, atEOF bool) (advance int, token []byte, err error) {
 	if data[0] == '<' {
 		// 遇到開頭是 <，就把整個 <...> 當作同一串切下來
 		right := bytes.IndexByte(data, '>')
-		fmt.Println("right:", right)
+		// fmt.Println("right:", right)
 		if right == -1 {
-			fmt.Println("-1, exist")
-			return 0, nil, nil
+			// fmt.Println("-1, exist")
+			return 1, data[:1], nil
 		}
 		return right + 1, data[:right+1], nil
 	}
@@ -79,22 +78,22 @@ func main() {
 	var matchList []Keybinding
 	for scanner.Scan() {
 		// fmt.Println("scanner.Text():", scanner.Text())
-		current_line := strings.Fields(scanner.Text())
-		match_arr := strings.SplitN(strings.Join(current_line, " "), " ", 3)
+		currentLine := strings.Fields(scanner.Text())
+		matchArr := strings.SplitN(strings.Join(currentLine, " "), " ", 3)
 		// fmt.Println("arr", strings.Join(arr, "|"))
 		// fmt.Println("arr", match_arr[0])
 		// if strings.Contains(match_arr[0], "inoremap") || strings.Contains(match_arr[0], "imap") {
-		if match_arr[0] == "inoremap" || match_arr[0] == "imap" {
-			fmt.Println("match_arr: ", strings.Join(match_arr, "|"))
+		if matchArr[0] == "inoremap" || matchArr[0] == "imap" {
+			fmt.Println("match_arr: ", strings.Join(matchArr, "|"))
 			// if !strings.HasPrefix(match_arr[0], "\"") {
 			// 	fmt.Println("line:", match_arr)
 			// fmt.Println("before group:", strings.Split(match_arr[1], ""))
-			before_group := SplitVimFormat(match_arr[1])
-			after_group := SplitVimFormat(match_arr[2])
-			fmt.Println("before_group", before_group)
-			fmt.Println("after_group", after_group)
+			beforeGroup := SplitVimFormat(matchArr[1])
+			afterGroup := SplitVimFormat(matchArr[2])
+			fmt.Println("before_group", beforeGroup)
+			fmt.Println("after_group", afterGroup)
 			// fmt.Println("after group:", match_arr[2])
-			matchList = append(matchList, Keybinding{Before: before_group, After: after_group})
+			matchList = append(matchList, Keybinding{Before: beforeGroup, After: afterGroup})
 			// }
 		}
 		// arr := strings.SplitN(scanner.Text(), " ", 3)
@@ -103,18 +102,19 @@ func main() {
 
 	}
 
-	fmt.Println("matchList", matchList)
+	// fmt.Println("matchList", matchList)
+
 	// jsonData, err := json.MarshalIndent(matchList, "", "  ")
 	// if err != nil {
 	// 	log.Println(err)
 	// }
 
-	jsonData := bytes.NewBuffer([]byte{})
-	jsonEncoder := json.NewEncoder(jsonData)
-	jsonEncoder.SetEscapeHTML(false)
-	jsonEncoder.SetIndent("", "  ")
-	jsonEncoder.Encode(matchList)
-	fmt.Println("JSON：", jsonData.String())
+	// jsonData := bytes.NewBuffer([]byte{})
+	// jsonEncoder := json.NewEncoder(jsonData)
+	// jsonEncoder.SetEscapeHTML(false)
+	// jsonEncoder.SetIndent("", "  ")
+	// jsonEncoder.Encode(matchList)
+	// fmt.Println("JSON：", jsonData.String())
 
 	// fmt.Println("JSON:", string(jsonData))
 
@@ -133,7 +133,7 @@ func main() {
 	// }
 
 	// defer fileOfVscodeVimKeybinding.Close()
-	ioutil.WriteFile("keybindingOfVscodeVim.json", []byte(jsonData.String()), os.ModePerm)
+	// ioutil.WriteFile("keybindingOfVscodeVim.json", []byte(jsonData.String()), os.ModePerm)
 
 	// for _, eachLine := range scanner.Text() {
 	// 	typeOf := reflect.TypeOf(eachLine).Kind()
