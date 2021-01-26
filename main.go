@@ -119,7 +119,6 @@ func main() {
 	fmt.Println("JSON：", jsonData.String())
 
 	// fmt.Println("JSON:", string(jsonData))
-
 	// for _, eachLine := range text {
 	// 	// if
 	// 	arr := strings.SplitN(eachLine, " ", 3)
