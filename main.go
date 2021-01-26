@@ -3,7 +3,9 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"os"
 	"strings"
@@ -109,12 +111,12 @@ func main() {
 	// 	log.Println(err)
 	// }
 
-	// jsonData := bytes.NewBuffer([]byte{})
-	// jsonEncoder := json.NewEncoder(jsonData)
-	// jsonEncoder.SetEscapeHTML(false)
-	// jsonEncoder.SetIndent("", "  ")
-	// jsonEncoder.Encode(matchList)
-	// fmt.Println("JSON：", jsonData.String())
+	jsonData := bytes.NewBuffer([]byte{})
+	jsonEncoder := json.NewEncoder(jsonData)
+	jsonEncoder.SetEscapeHTML(false)
+	jsonEncoder.SetIndent("", "  ")
+	jsonEncoder.Encode(matchList)
+	fmt.Println("JSON：", jsonData.String())
 
 	// fmt.Println("JSON:", string(jsonData))
 
@@ -133,7 +135,7 @@ func main() {
 	// }
 
 	// defer fileOfVscodeVimKeybinding.Close()
-	// ioutil.WriteFile("keybindingOfVscodeVim.json", []byte(jsonData.String()), os.ModePerm)
+	ioutil.WriteFile("keybindingOfVscodeVim.json", []byte(jsonData.String()), os.ModePerm)
 
 	// for _, eachLine := range scanner.Text() {
 	// 	typeOf := reflect.TypeOf(eachLine).Kind()
