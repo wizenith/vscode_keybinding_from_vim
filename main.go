@@ -32,10 +32,7 @@ func print(arr []string) {
 
 // dropCR drops a terminal \r from the data.
 func dropCR(data []byte) []byte {
-	if len(data) > 0 && data[len(data)-1] == '\r' {
-		return data[0 : len(data)-1]
-	}
-	return data
+	return bytes.TrimRight(data, "\r")
 }
 
 func splitFunc(data []byte, atEOF bool) (advance int, token []byte, err error) {
