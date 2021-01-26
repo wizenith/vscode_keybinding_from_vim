@@ -17,6 +17,15 @@ type Keybinding struct {
 	After  []string `json:"after"`
 }
 
+type KeybindingsOfAllModes struct {
+	Normal   []Keybinding `json:"vim.normalModeKeyBindings"`
+	Nnoremap []Keybinding `json:"vim.normalModeKeyBindingsNonRecursive"`
+	Insert   []Keybinding `json:"vim.insertModeKeyBindings"`
+	Inoremap []Keybinding `json:"vim.insertModeKeyBindingsNonRecursive"`
+	Visual   []Keybinding `json:"vim.visualModeKeyBindings"`
+	Vnoremap []Keybinding `json:"vim.visualModeKeyBindingsNonRecursive"`
+}
+
 func print(arr []string) {
 
 	fmt.Println(strings.Join(arr, " | "))
@@ -62,7 +71,7 @@ func main() {
 
 	scanner := bufio.NewScanner(file)
 
-	var matchList []Keybinding
+	var matchList []KeybindingsOfAllModes
 	for scanner.Scan() {
 
 		currentLine := strings.Fields(scanner.Text())
@@ -74,7 +83,7 @@ func main() {
 			afterGroup := SplitVimFormat(matchArr[2])
 			fmt.Println("before_group", beforeGroup)
 			fmt.Println("after_group", afterGroup)
-			matchList = append(matchList, Keybinding{Before: beforeGroup, After: afterGroup})
+			matchList = append(matchList, KeybindingsOfAllModes{Insert{Before: beforeGroup, After: afterGroup}})
 		}
 
 	}
