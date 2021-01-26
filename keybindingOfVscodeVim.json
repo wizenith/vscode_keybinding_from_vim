@@ -1,773 +1,1358 @@
 [
   {
-    "before": [
-      "i",
-      "i"
-    ],
-    "after": [
-      "<ESC>"
-    ]
-  },
-  {
-    "before": [
-      "<leader>",
-      "i",
-      "i"
-    ],
-    "after": [
-      "<ESC>"
-    ]
-  },
-  {
-    "before": [
-      "<C-h>"
-    ],
-    "after": [
-      "<Left>"
-    ]
-  },
-  {
-    "before": [
-      "<silent>",
-      "<expr>",
-      "<C-j>"
-    ],
-    "after": [
-      "p",
-      "u",
-      "m",
-      "v",
-      "i",
-      "s",
-      "i",
-      "b",
-      "l",
-      "e",
-      "(",
-      ")",
-      "?",
-      "\"",
-      "<Down>",
-      "\"",
-      ":",
-      "\"",
-      "<c-\\>",
-      "<c-o>",
-      "g",
-      "j",
-      "\""
-    ]
-  },
-  {
-    "before": [
-      "<silent>",
-      "<expr>",
-      "<C-k>"
-    ],
-    "after": [
-      "p",
-      "u",
-      "m",
-      "v",
-      "i",
-      "s",
-      "i",
-      "b",
-      "l",
-      "e",
-      "(",
-      ")",
-      "?",
-      "\"",
-      "<Up>",
-      "\"",
-      ":",
-      "\"",
-      "<c-\\>",
-      "<c-o>",
-      "g",
-      "k",
-      "\""
-    ]
-  },
-  {
-    "before": [
-      "<C-l>"
-    ],
-    "after": [
-      "<Right>"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "d",
-      "l"
-    ],
-    "after": [
-      "<C-o>",
-      "d",
-      "$"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "d",
-      "h"
-    ],
-    "after": [
-      "<C-o>",
-      "d",
-      "0"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "d",
-      "d"
-    ],
-    "after": [
-      "<C-o>",
-      "d",
-      "d"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "d",
-      "w"
-    ],
-    "after": [
-      "<ESC>",
-      "c",
-      "i",
-      "w"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "w",
-      "l"
-    ],
-    "after": [
-      "<C-o>",
-      "w"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "w",
-      "h"
-    ],
-    "after": [
-      "<C-o>",
-      "b"
-    ]
-  },
-  {
-    "before": [
-      "<M-h>"
-    ],
-    "after": [
-      "<C-o>",
-      "b"
-    ]
-  },
-  {
-    "before": [
-      "<M-l>"
-    ],
-    "after": [
-      "<C-o>",
-      "w"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "y",
-      "l"
-    ],
-    "after": [
-      "<C-o>",
-      "Y",
-      "<C-o>",
-      "p"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "o"
-    ],
-    "after": [
-      "<C-o>"
-    ]
-  },
-  {
-    "before": [
-      "<C-d>"
-    ],
-    "after": [
-      "<Del>"
-    ]
-  },
-  {
-    "before": [
-      "<M-d>"
-    ],
-    "after": [
-      "<BS>"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "d",
-      "b"
-    ],
-    "after": [
-      "<BS>"
-    ]
-  },
-  {
-    "before": [
-      "<C-v>"
-    ],
-    "after": [
-      "<C-o>",
-      "\"",
-      "*",
-      "P"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "h"
-    ],
-    "after": [
-      "<c-o>",
-      "^"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      ";"
-    ],
-    "after": [
-      "<C-o>",
-      "$"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "k"
-    ],
-    "after": [
-      "<C-o>",
-      ",",
-      ",",
-      "B"
-    ]
-  },
-  {
-    "before": [
-      "<S-Left>"
-    ],
-    "after": [
-      "<Left>",
-      "<C-o>",
-      "v"
-    ]
-  },
-  {
-    "before": [
-      "<S-Right>"
-    ],
-    "after": [
-      "<C-o>",
-      "v"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "e"
-    ],
-    "after": [
-      "="
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "a"
-    ],
-    "after": [
-      "+"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "l"
-    ],
-    "after": [
-      "\\",
-      "|"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "u"
-    ],
-    "after": [
-      "_"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "s",
-      "s"
-    ],
-    "after": [
-      "$"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "s",
-      "m"
-    ],
-    "after": [
-      "&"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "s",
-      "a"
-    ],
-    "after": [
-      "@"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "t"
-    ],
-    "after": [
-      "#"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "p"
-    ],
-    "after": [
-      "%"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "q"
-    ],
-    "after": [
-      "`"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "j"
-    ],
-    "after": [
-      "!"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "s"
-    ],
-    "after": [
-      "*"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "h"
-    ],
-    "after": [
-      "^"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "k"
-    ],
-    "after": [
-      "\ufffd",
-      "\ufffd",
-      "\ufffd"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "i"
-    ],
-    "after": [
-      "\\"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "e",
-      "g"
-    ],
-    "after": [
-      ">",
-      "="
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "e",
-      "l"
-    ],
-    "after": [
-      "<",
-      "="
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "e",
-      "e"
-    ],
-    "after": [
-      "=",
-      "="
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "e",
-      "a"
-    ],
-    "after": [
-      "+",
-      "="
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "e",
-      "n"
-    ],
-    "after": [
-      "!",
-      "="
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "a",
-      "a"
-    ],
-    "after": [
-      "+",
-      "+"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "n"
-    ],
-    "after": [
-      "<Esc>",
-      "o"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "p"
-    ],
-    "after": [
-      "<C-o>",
-      "f",
-      ")"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "y",
-      "l"
-    ],
-    "after": [
-      "<Esc>",
-      "Y",
-      "p",
-      "i"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "j",
-      "c"
-    ],
-    "after": [
-      "<ESC>",
-      "y",
-      "i",
-      "w",
-      "f",
-      ")",
-      "i",
-      ",",
-      " ",
-      "<ESC>",
-      "p",
-      "i"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "j",
-      "k"
-    ],
-    "after": [
-      "<ESC>",
-      "l",
-      "a"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "j",
-      "b"
-    ],
-    "after": [
-      "<ESC>",
-      "f",
-      ")",
-      "i",
-      ","
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "j",
-      "B"
-    ],
-    "after": [
-      "<ESC>",
-      "f",
-      "}",
-      "i",
-      ","
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "j",
-      "l"
-    ],
-    "after": [
-      "<C-o>",
-      "f",
-      ")"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "j",
-      "L"
-    ],
-    "after": [
-      "<ESC>",
-      "f",
-      ")",
-      "a"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "j",
-      "n"
-    ],
-    "after": [
-      "<ESC>",
-      "f",
-      ",",
-      "f",
-      "\"",
-      "a"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "j",
-      "q"
-    ],
-    "after": [
-      "<ESC>",
-      "f",
-      "\"",
-      "i"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "v"
-    ],
-    "after": [
-      "<c-o>",
-      "\"",
-      "k",
-      "P"
-    ]
-  },
-  {
-    "before": [
-      "<leader>",
-      "f",
-      "f"
-    ],
-    "after": [
-      "<C-x>",
-      "<C-f>"
-    ]
-  },
-  {
-    "before": [
-      "<c-z>"
-    ],
-    "after": [
-      "<C-o>",
-      "u"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "q"
-    ],
-    "after": [
-      "<ESC>",
-      "v",
-      "i",
-      "(",
-      "S",
-      "`"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "'"
-    ],
-    "after": [
-      "<ESC>",
-      "v",
-      "i",
-      "(",
-      "S",
-      "'"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "\""
-    ],
-    "after": [
-      "<ESC>",
-      "v",
-      "i",
-      "(",
-      "S",
-      "\""
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "b"
-    ],
-    "after": [
-      "(",
-      "<Space>",
-      "<Space>",
-      ")",
-      "<C-o>",
-      "h"
-    ]
-  },
-  {
-    "before": [
-      ";",
-      "i",
-      "B"
-    ],
-    "after": [
-      "{",
-      "<Space>",
-      "<Space>",
-      "}",
-      "<C-o>",
-      "h"
-    ]
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "i",
+          "i"
+        ],
+        "after": [
+          "<ESC>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<leader>",
+          "i",
+          "i"
+        ],
+        "after": [
+          "<ESC>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<C-h>"
+        ],
+        "after": [
+          "<Left>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<silent>",
+          "<expr>",
+          "<C-j>"
+        ],
+        "after": [
+          "p",
+          "u",
+          "m",
+          "v",
+          "i",
+          "s",
+          "i",
+          "b",
+          "l",
+          "e",
+          "(",
+          ")",
+          "?",
+          "\"",
+          "<Down>",
+          "\"",
+          ":",
+          "\"",
+          "<c-\\>",
+          "<c-o>",
+          "g",
+          "j",
+          "\""
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<silent>",
+          "<expr>",
+          "<C-k>"
+        ],
+        "after": [
+          "p",
+          "u",
+          "m",
+          "v",
+          "i",
+          "s",
+          "i",
+          "b",
+          "l",
+          "e",
+          "(",
+          ")",
+          "?",
+          "\"",
+          "<Up>",
+          "\"",
+          ":",
+          "\"",
+          "<c-\\>",
+          "<c-o>",
+          "g",
+          "k",
+          "\""
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<C-l>"
+        ],
+        "after": [
+          "<Right>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "d",
+          "l"
+        ],
+        "after": [
+          "<C-o>",
+          "d",
+          "$"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "d",
+          "h"
+        ],
+        "after": [
+          "<C-o>",
+          "d",
+          "0"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "d",
+          "d"
+        ],
+        "after": [
+          "<C-o>",
+          "d",
+          "d"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "d",
+          "w"
+        ],
+        "after": [
+          "<ESC>",
+          "c",
+          "i",
+          "w"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "w",
+          "l"
+        ],
+        "after": [
+          "<C-o>",
+          "w"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "w",
+          "h"
+        ],
+        "after": [
+          "<C-o>",
+          "b"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<M-h>"
+        ],
+        "after": [
+          "<C-o>",
+          "b"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<M-l>"
+        ],
+        "after": [
+          "<C-o>",
+          "w"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "y",
+          "l"
+        ],
+        "after": [
+          "<C-o>",
+          "Y",
+          "<C-o>",
+          "p"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "o"
+        ],
+        "after": [
+          "<C-o>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<C-d>"
+        ],
+        "after": [
+          "<Del>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<M-d>"
+        ],
+        "after": [
+          "<BS>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "d",
+          "b"
+        ],
+        "after": [
+          "<BS>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<C-v>"
+        ],
+        "after": [
+          "<C-o>",
+          "\"",
+          "*",
+          "P"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "h"
+        ],
+        "after": [
+          "<c-o>",
+          "^"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          ";"
+        ],
+        "after": [
+          "<C-o>",
+          "$"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "k"
+        ],
+        "after": [
+          "<C-o>",
+          ",",
+          ",",
+          "B"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<S-Left>"
+        ],
+        "after": [
+          "<Left>",
+          "<C-o>",
+          "v"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<S-Right>"
+        ],
+        "after": [
+          "<C-o>",
+          "v"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "e"
+        ],
+        "after": [
+          "="
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "a"
+        ],
+        "after": [
+          "+"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "l"
+        ],
+        "after": [
+          "\\",
+          "|"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "u"
+        ],
+        "after": [
+          "_"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "s",
+          "s"
+        ],
+        "after": [
+          "$"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "s",
+          "m"
+        ],
+        "after": [
+          "&"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "s",
+          "a"
+        ],
+        "after": [
+          "@"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "t"
+        ],
+        "after": [
+          "#"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "p"
+        ],
+        "after": [
+          "%"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "q"
+        ],
+        "after": [
+          "`"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "j"
+        ],
+        "after": [
+          "!"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "s"
+        ],
+        "after": [
+          "*"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "h"
+        ],
+        "after": [
+          "^"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "k"
+        ],
+        "after": [
+          "\ufffd",
+          "\ufffd",
+          "\ufffd"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "i"
+        ],
+        "after": [
+          "\\"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "e",
+          "g"
+        ],
+        "after": [
+          ">",
+          "="
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "e",
+          "l"
+        ],
+        "after": [
+          "<",
+          "="
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "e",
+          "e"
+        ],
+        "after": [
+          "=",
+          "="
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "e",
+          "a"
+        ],
+        "after": [
+          "+",
+          "="
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "e",
+          "n"
+        ],
+        "after": [
+          "!",
+          "="
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "a",
+          "a"
+        ],
+        "after": [
+          "+",
+          "+"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "n"
+        ],
+        "after": [
+          "<Esc>",
+          "o"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "p"
+        ],
+        "after": [
+          "<C-o>",
+          "f",
+          ")"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "y",
+          "l"
+        ],
+        "after": [
+          "<Esc>",
+          "Y",
+          "p",
+          "i"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "j",
+          "c"
+        ],
+        "after": [
+          "<ESC>",
+          "y",
+          "i",
+          "w",
+          "f",
+          ")",
+          "i",
+          ",",
+          " ",
+          "<ESC>",
+          "p",
+          "i"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "j",
+          "k"
+        ],
+        "after": [
+          "<ESC>",
+          "l",
+          "a"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "j",
+          "b"
+        ],
+        "after": [
+          "<ESC>",
+          "f",
+          ")",
+          "i",
+          ","
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "j",
+          "B"
+        ],
+        "after": [
+          "<ESC>",
+          "f",
+          "}",
+          "i",
+          ","
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "j",
+          "l"
+        ],
+        "after": [
+          "<C-o>",
+          "f",
+          ")"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "j",
+          "L"
+        ],
+        "after": [
+          "<ESC>",
+          "f",
+          ")",
+          "a"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "j",
+          "n"
+        ],
+        "after": [
+          "<ESC>",
+          "f",
+          ",",
+          "f",
+          "\"",
+          "a"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "j",
+          "q"
+        ],
+        "after": [
+          "<ESC>",
+          "f",
+          "\"",
+          "i"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "v"
+        ],
+        "after": [
+          "<c-o>",
+          "\"",
+          "k",
+          "P"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<leader>",
+          "f",
+          "f"
+        ],
+        "after": [
+          "<C-x>",
+          "<C-f>"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "<c-z>"
+        ],
+        "after": [
+          "<C-o>",
+          "u"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "q"
+        ],
+        "after": [
+          "<ESC>",
+          "v",
+          "i",
+          "(",
+          "S",
+          "`"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "'"
+        ],
+        "after": [
+          "<ESC>",
+          "v",
+          "i",
+          "(",
+          "S",
+          "'"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "\""
+        ],
+        "after": [
+          "<ESC>",
+          "v",
+          "i",
+          "(",
+          "S",
+          "\""
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "b"
+        ],
+        "after": [
+          "(",
+          "<Space>",
+          "<Space>",
+          ")",
+          "<C-o>",
+          "h"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
+  },
+  {
+    "vim.normalModeKeyBindings": null,
+    "vim.normalModeKeyBindingsNonRecursive": null,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          ";",
+          "i",
+          "B"
+        ],
+        "after": [
+          "{",
+          "<Space>",
+          "<Space>",
+          "}",
+          "<C-o>",
+          "h"
+        ]
+      }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": null,
+    "vim.visualModeKeyBindings": null,
+    "vim.visualModeKeyBindingsNonRecursive": null
   }
 ]
