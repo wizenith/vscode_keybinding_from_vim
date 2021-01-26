@@ -86,7 +86,8 @@ func main() {
 		match_arr := strings.SplitN(strings.Join(current_line, " "), " ", 3)
 		// fmt.Println("arr", strings.Join(arr, "|"))
 		// fmt.Println("arr", match_arr[0])
-		if strings.Contains(match_arr[0], "inoremap") || strings.Contains(match_arr[0], "imap") {
+		// if strings.Contains(match_arr[0], "inoremap") || strings.Contains(match_arr[0], "imap") {
+		if match_arr[0] == "inoremap" || match_arr[0] == "imap" {
 			fmt.Println("match_arr: ", strings.Join(match_arr, "|"))
 			// if !strings.HasPrefix(match_arr[0], "\"") {
 			// 	fmt.Println("line:", match_arr)
