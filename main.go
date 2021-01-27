@@ -36,6 +36,17 @@ func (k KeybindingsOfAllModes) String() string {
 	return jsonData.String()
 }
 
+// ProcessDistrubutionKeybindingModes split and process different type of vim mode
+func ProcessDistrubutionKeybindingModes(matchArr []string, matchList *KeybindingsOfAllModes) {
+
+	// fmt.Println("match_arr: ", strings.Join(matchArr, "|"))
+	beforeGroup := SplitVimFormat(matchArr[1])
+	afterGroup := SplitVimFormat(matchArr[2])
+	// fmt.Println("before_group", beforeGroup)
+	// fmt.Println("after_group", afterGroup)
+	matchList.Insert = append(matchList, Keybinding{Before: beforeGroup, After: afterGroup})
+
+}
 func print(arr []string) {
 
 	fmt.Println(strings.Join(arr, " | "))
@@ -82,20 +93,17 @@ func main() {
 	scanner := bufio.NewScanner(file)
 
 	var matchList KeybindingsOfAllModes
-	// var matchList []Keybinding
 	for scanner.Scan() {
 
 		currentLine := strings.Fields(scanner.Text())
 		matchArr := strings.SplitN(strings.Join(currentLine, " "), " ", 3)
 
 		if matchArr[0] == "inoremap" || matchArr[0] == "imap" {
-			fmt.Println("match_arr: ", strings.Join(matchArr, "|"))
-			beforeGroup := SplitVimFormat(matchArr[1])
-			afterGroup := SplitVimFormat(matchArr[2])
-			fmt.Println("before_group", beforeGroup)
-			fmt.Println("after_group", afterGroup)
-			// matchList = append(matchList, Keybinding{Before: beforeGroup, After: afterGroup})
-			matchList = append(matchList, KeybindingsOfAllModes{Insert: []Keybinding{{Before: beforeGroup, After: afterGroup}}})
+			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Insert)
+		}
+
+		if matchArr[0] == "nnoremap" || matchArr[0] == "nmap" {
+			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Normal)
 		}
 
 	}
