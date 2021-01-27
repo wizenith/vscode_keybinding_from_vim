@@ -9,6 +9,9 @@
 OS Platform Support for Windows, Linux and OSX
 ### **Usage as below:**
 ### Go
+First of all, clone this repo:
+```git clone https://github.com/wizenith/vscode_keybinding_from_vim.git```
+switch into this directory and then:
 ```go run . --filepath [specify the path of your vim keybinding config file]```
 ### Windows
 ```vimtovscodekeybinding.exe -f [specify the path of your vim keybinding config file] ```<br>
