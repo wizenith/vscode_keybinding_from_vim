@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -58,8 +59,19 @@ func splitFunc(data []byte, atEOF bool) (advance int, token []byte, err error) {
 }
 
 func main() {
+	var filepath string
+	flag.StringVar(&filepath, "filepath", "", "your init.vim filepath")
+	flag.Parse()
 
-	file, err := os.Open("lab.vim")
+	if len(filepath) == 0 {
+		// fmt.Fprintf(os.Stderr, "You must specify the filepath your init.vim")
+		// fmt.Errorf("You must specify the filepat of your init.vim: %v", os.Stderr)
+		// return
+		filepath = "lab.vim"
+	}
+
+	fmt.Printf("Your vim config filepath was: %s\n", filepath)
+	file, err := os.Open(filepath)
 	if err != nil {
 		log.Fatal("failed to open")
 	}
@@ -78,12 +90,13 @@ func main() {
 	}
 
 	for scanner.Scan() {
-		fmt.Println(" len of scanner.text()", len(scanner.Text()))
+		if len(scanner.Text()) == 0 {
+			continue
+		}
 		currentLine := strings.Fields(scanner.Text())
 		matchArr := strings.SplitN(strings.Join(currentLine, " "), " ", 3)
-		// fmt.Println("matchArr[1]:", matchArr[1])
-		// fmt.Println("len of matchArr[1]:", len(matchArr[1]))
-		if len(scanner.Text()) != 0 && matchArr[1] != "" && strings.Contains(matchArr[1], "silent") && strings.Contains(matchArr[1], "expr") {
+
+		if strings.Contains(matchArr[1], "silent") && strings.Contains(matchArr[1], "expr") {
 			continue
 		}
 		if mode, ok := modeMap[matchArr[0]]; ok {
