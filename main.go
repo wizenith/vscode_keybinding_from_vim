@@ -75,6 +75,7 @@ func main() {
 		if matchArr[0] == "imap" {
 			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Insert)
 		}
+
 		if matchArr[0] == "inoremap" {
 			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Inoremap)
 		}

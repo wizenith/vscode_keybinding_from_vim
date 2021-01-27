@@ -11,6 +11,7 @@ type Keybinding struct {
 	After  []string `json:"after"`
 }
 
+//KeybindingsOfAllModes | all type of vim modes
 type KeybindingsOfAllModes struct {
 	Normal   []Keybinding `json:"vim.normalModeKeyBindings"`
 	Nnoremap []Keybinding `json:"vim.normalModeKeyBindingsNonRecursive"`
