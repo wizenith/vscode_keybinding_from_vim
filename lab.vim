@@ -2,8 +2,6 @@ inoremap ii <ESC>
 
 " Insert mode 
 inoremap <C-h> <C-o>b
-inoremap <silent><expr><C-j> pumvisible()?"<Down>":"<c-\><c-o>gj"
-inoremap <silent><expr><C-k> pumvisible()?"<Up>":"<c-\><c-o>gk"
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
