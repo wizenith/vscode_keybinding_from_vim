@@ -67,32 +67,22 @@ func main() {
 	scanner := bufio.NewScanner(file)
 
 	var matchList KeybindingsOfAllModes
-	for scanner.Scan() {
 
+	modeMap := map[string]*[]Keybinding{
+		"imap":     &matchList.Insert,
+		"inoremap": &matchList.Inoremap,
+		"nmap":     &matchList.Normal,
+		"nnoremap": &matchList.Nnoremap,
+		"vmap":     &matchList.Visual,
+		"vnoremap": &matchList.Vnoremap,
+	}
+
+	for scanner.Scan() {
 		currentLine := strings.Fields(scanner.Text())
 		matchArr := strings.SplitN(strings.Join(currentLine, " "), " ", 3)
 
-		if matchArr[0] == "imap" {
-			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Insert)
-		}
-		if matchArr[0] == "inoremap" {
-			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Inoremap)
-		}
-
-		if matchArr[0] == "nmap" {
-			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Normal)
-		}
-
-		if matchArr[0] == "nnoremap" {
-			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Nnoremap)
-		}
-
-		if matchArr[0] == "vmap" {
-			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Visual)
-		}
-
-		if matchArr[0] == "vnoremap" {
-			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Vnoremap)
+		if mode, ok := modeMap[matchArr[0]]; ok {
+			ProcessDistrubutionKeybindingModes(matchArr, mode)
 		}
 	}
 
