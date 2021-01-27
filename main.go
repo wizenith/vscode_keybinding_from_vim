@@ -3,39 +3,12 @@ package main
 import (
 	"bufio"
 	"bytes"
-	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
 	"strings"
 )
-
-//Keybinding | type of vscodevim keybinding
-type Keybinding struct {
-	Before []string `json:"before"`
-	After  []string `json:"after"`
-}
-
-//KeybindingsOfAllModes   implement all kind of vim mode
-type KeybindingsOfAllModes struct {
-	Normal   []Keybinding `json:"vim.normalModeKeyBindings"`
-	Nnoremap []Keybinding `json:"vim.normalModeKeyBindingsNonRecursive"`
-	Insert   []Keybinding `json:"vim.insertModeKeyBindings"`
-	Inoremap []Keybinding `json:"vim.insertModeKeyBindingsNonRecursive"`
-	Visual   []Keybinding `json:"vim.visualModeKeyBindings"`
-	Vnoremap []Keybinding `json:"vim.visualModeKeyBindingsNonRecursive"`
-}
-
-// implement Stringer interface for KeybindingsOfAllModes
-func (k KeybindingsOfAllModes) String() string {
-	jsonData := bytes.NewBuffer([]byte{})
-	jsonEncoder := json.NewEncoder(jsonData)
-	jsonEncoder.SetEscapeHTML(false)
-	jsonEncoder.SetIndent("", "  ")
-	jsonEncoder.Encode(k)
-	return jsonData.String()
-}
 
 // ProcessDistrubutionKeybindingModes split and process different type of vim mode
 func ProcessDistrubutionKeybindingModes(matchArr []string, matchList *[]Keybinding) {
