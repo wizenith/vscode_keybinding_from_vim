@@ -60,14 +60,16 @@ func splitFunc(data []byte, atEOF bool) (advance int, token []byte, err error) {
 
 func main() {
 	var filepath string
-	flag.StringVar(&filepath, "filepath", "", "your init.vim filepath")
+	flag.StringVar(&filepath, "filepath", "", "specify your vim keybinding filepath")
+	flag.StringVar(&filepath, "f", "", "specify your vim keybinding filepath(shorthand)")
+
 	flag.Parse()
 
 	if len(filepath) == 0 {
-		// fmt.Fprintf(os.Stderr, "You must specify the filepath your init.vim")
+		fmt.Fprintf(os.Stderr, "You must specify the filepath your init.vim")
 		// fmt.Errorf("You must specify the filepat of your init.vim: %v", os.Stderr)
-		// return
-		filepath = "lab.vim"
+		return
+		// filepath = "lab.vim"
 	}
 
 	fmt.Printf("Your vim config filepath was: %s\n", filepath)
