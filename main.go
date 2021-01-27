@@ -78,11 +78,12 @@ func main() {
 	}
 
 	for scanner.Scan() {
+		fmt.Println(" len of scanner.text()", len(scanner.Text()))
 		currentLine := strings.Fields(scanner.Text())
 		matchArr := strings.SplitN(strings.Join(currentLine, " "), " ", 3)
-		fmt.Println("matchArr[1]:", matchArr[1])
+		// fmt.Println("matchArr[1]:", matchArr[1])
 		// fmt.Println("len of matchArr[1]:", len(matchArr[1]))
-		if matchArr[1] != "" && strings.Contains(matchArr[1], "silent") && strings.Contains(matchArr[1], "expr") {
+		if len(scanner.Text()) != 0 && matchArr[1] != "" && strings.Contains(matchArr[1], "silent") && strings.Contains(matchArr[1], "expr") {
 			continue
 		}
 		if mode, ok := modeMap[matchArr[0]]; ok {
