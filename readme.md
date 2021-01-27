@@ -8,13 +8,13 @@
 ![demo2](https://i.imgur.com/8EJup8r.gif)
 ### **Usage:**
 ### Windows
-```vimtovscodekeybinding.exe -f [specify the path of your vim keybinding config file] ```
-**or**
-```vimtovscodekeybinding.exe --filepath [specify the path of your vim keybinding config file]```
+```vimtovscodekeybinding.exe -f [specify the path of your vim keybinding config file] ```<br>
+**or**<br>
+```vimtovscodekeybinding.exe --filepath [specify the path of your vim keybinding config file]```<br>
 ### Linux
-```vimtovscodekeybinding -f [specify the path of your vim keybinding config file] ```
-**or**
-```vimtovscodekeybinding --filepath [specify the path of your vim keybinding config file]```
+```vimtovscodekeybinding -f [specify the path of your vim keybinding config file] ```<br>
+**or**<br>
+```vimtovscodekeybinding --filepath [specify the path of your vim keybinding config file]```<br>
 ## you can download the binary from [this page](https://github.com/wizenith/vscode_keybinding_from_vim/releases) 
 
 
