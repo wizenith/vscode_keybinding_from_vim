@@ -99,14 +99,28 @@ func main() {
 		currentLine := strings.Fields(scanner.Text())
 		matchArr := strings.SplitN(strings.Join(currentLine, " "), " ", 3)
 
-		if matchArr[0] == "inoremap" || matchArr[0] == "imap" {
+		if matchArr[0] == "imap" {
 			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Insert)
 		}
+		if matchArr[0] == "inoremap" {
+			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Inoremap)
+		}
 
-		if matchArr[0] == "nnoremap" || matchArr[0] == "nmap" {
+		if matchArr[0] == "nmap" {
 			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Normal)
 		}
 
+		if matchArr[0] == "nnoremap" {
+			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Nnoremap)
+		}
+
+		if matchArr[0] == "vmap" {
+			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Visual)
+		}
+
+		if matchArr[0] == "vnoremap" {
+			ProcessDistrubutionKeybindingModes(matchArr, &matchList.Vnoremap)
+		}
 	}
 
 	fmt.Println("JSON：", matchList)
