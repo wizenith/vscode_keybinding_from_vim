@@ -3,7 +3,7 @@
 
 #### convert your keybindings from vim into the format of vscodevim keybinding 
 
-![demo1](demo1.jpg)
+![demo1](/img/demo1.jpg)
 
 ### **Usage:**
 ### Windows
