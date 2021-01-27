@@ -5,6 +5,7 @@
 
 ![demo1](https://i.imgur.com/yQz3IGO.png)
 
+![demo2](https://i.imgur.com/8EJup8r.gif)
 ### **Usage:**
 ### Windows
 ```vimtovscodekeybinding.exe -f [specify the path of your vim keybinding config file] ```
