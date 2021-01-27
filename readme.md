@@ -6,7 +6,8 @@
 ![demo1](https://i.imgur.com/yQz3IGO.png)
 
 ![demo2](https://i.imgur.com/Tjl7ctM.gif)
-### **Usage:**
+OS Platform Support for Windows, Linux and OSX
+### **Usage as below:**
 ### Windows
 ```vimtovscodekeybinding.exe -f [specify the path of your vim keybinding config file] ```<br>
 **or**<br>
@@ -15,6 +16,11 @@
 ```vimtovscodekeybinding -f [specify the path of your vim keybinding config file] ```<br>
 **or**<br>
 ```vimtovscodekeybinding --filepath [specify the path of your vim keybinding config file]```<br>
+### OSX
+```vimtovscodekeybinding_osx -f [specify the path of your vim keybinding config file] ```<br>
+**or**<br>
+```vimtovscodekeybinding_osx --filepath [specify the path of your vim keybinding config file]```<br>
+
 ## you can download the binary from [this page](https://github.com/wizenith/vscode_keybinding_from_vim/releases) 
 
 
