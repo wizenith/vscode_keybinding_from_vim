@@ -8,6 +8,8 @@
 ![demo2](https://i.imgur.com/Tjl7ctM.gif)
 OS Platform Support for Windows, Linux and OSX
 ### **Usage as below:**
+### Go
+```go run . --filepath [specify the path of your vim keybinding config file]```
 ### Windows
 ```vimtovscodekeybinding.exe -f [specify the path of your vim keybinding config file] ```<br>
 **or**<br>
