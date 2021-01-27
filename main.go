@@ -17,6 +17,7 @@ type Keybinding struct {
 	After  []string `json:"after"`
 }
 
+//KeybindingsOfAllModes   implement all kind of vim mode
 type KeybindingsOfAllModes struct {
 	Normal   []Keybinding `json:"vim.normalModeKeyBindings"`
 	Nnoremap []Keybinding `json:"vim.normalModeKeyBindingsNonRecursive"`
@@ -37,14 +38,14 @@ func (k KeybindingsOfAllModes) String() string {
 }
 
 // ProcessDistrubutionKeybindingModes split and process different type of vim mode
-func ProcessDistrubutionKeybindingModes(matchArr []string, matchList *KeybindingsOfAllModes) {
+func ProcessDistrubutionKeybindingModes(matchArr []string, matchList *[]Keybinding) {
 
 	// fmt.Println("match_arr: ", strings.Join(matchArr, "|"))
 	beforeGroup := SplitVimFormat(matchArr[1])
 	afterGroup := SplitVimFormat(matchArr[2])
 	// fmt.Println("before_group", beforeGroup)
 	// fmt.Println("after_group", afterGroup)
-	matchList.Insert = append(matchList, Keybinding{Before: beforeGroup, After: afterGroup})
+	*matchList = append(*matchList, Keybinding{Before: beforeGroup, After: afterGroup})
 
 }
 func print(arr []string) {
