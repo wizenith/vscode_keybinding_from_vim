@@ -1,7 +1,7 @@
 .PHONY: all build run gotool clean help
 
-LINUX_BINARY="vimtovscode"
-WIN_BINARY="vimtovscode.exe"
+LINUX_BINARY="vimtovscodekeybinding"
+WIN_BINARY="vimtovscodekeybinding.exe"
 
 all: gotool build
 

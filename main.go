@@ -66,10 +66,10 @@ func main() {
 	flag.Parse()
 
 	if len(filepath) == 0 {
-		fmt.Fprintf(os.Stderr, "You must specify the filepath your init.vim")
+		fmt.Fprintf(os.Stderr, "You must specify the filepath for your vim config file for keybinding or the path of init.vim")
 		// fmt.Errorf("You must specify the filepat of your init.vim: %v", os.Stderr)
-		return
 		// filepath = "lab.vim"
+		return
 	}
 
 	fmt.Printf("Your vim config filepath was: %s\n", filepath)
