@@ -71,7 +71,8 @@ func main() {
 
 	scanner := bufio.NewScanner(file)
 
-	var matchList []KeybindingsOfAllModes
+	var matchList KeybindingsOfAllModes
+	// var matchList []Keybinding
 	for scanner.Scan() {
 
 		currentLine := strings.Fields(scanner.Text())
@@ -83,6 +84,7 @@ func main() {
 			afterGroup := SplitVimFormat(matchArr[2])
 			fmt.Println("before_group", beforeGroup)
 			fmt.Println("after_group", afterGroup)
+			// matchList = append(matchList, Keybinding{Before: beforeGroup, After: afterGroup})
 			matchList = append(matchList, KeybindingsOfAllModes{Insert: []Keybinding{{Before: beforeGroup, After: afterGroup}}})
 		}
 
