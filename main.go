@@ -26,6 +26,16 @@ type KeybindingsOfAllModes struct {
 	Vnoremap []Keybinding `json:"vim.visualModeKeyBindingsNonRecursive"`
 }
 
+// implement Stringer interface for KeybindingsOfAllModes
+func (k KeybindingsOfAllModes) String() string {
+	jsonData := bytes.NewBuffer([]byte{})
+	jsonEncoder := json.NewEncoder(jsonData)
+	jsonEncoder.SetEscapeHTML(false)
+	jsonEncoder.SetIndent("", "  ")
+	jsonEncoder.Encode(k)
+	return jsonData.String()
+}
+
 func print(arr []string) {
 
 	fmt.Println(strings.Join(arr, " | "))
@@ -90,16 +100,11 @@ func main() {
 
 	}
 
-	jsonData := bytes.NewBuffer([]byte{})
-	jsonEncoder := json.NewEncoder(jsonData)
-	jsonEncoder.SetEscapeHTML(false)
-	jsonEncoder.SetIndent("", "  ")
-	jsonEncoder.Encode(matchList)
-	fmt.Println("JSON：", jsonData.String())
+	fmt.Println("JSON：", matchList)
 
 	file.Close()
 
-	ioutil.WriteFile("keybindingOfVscodeVim.json", []byte(jsonData.String()), os.ModePerm)
+	ioutil.WriteFile("keybindingOfVscodeVim.json", []byte(matchList.String()), os.ModePerm)
 
 }
 
