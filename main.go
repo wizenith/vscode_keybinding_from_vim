@@ -59,7 +59,7 @@ func splitFunc(data []byte, atEOF bool) (advance int, token []byte, err error) {
 
 func main() {
 
-	file, err := os.Open("init.vim")
+	file, err := os.Open("lab.vim")
 	if err != nil {
 		log.Fatal("failed to open")
 	}
