@@ -1,4 +1,4 @@
-module vimtovscode
+module vimtovscodekeybinding
 
 go 1.15
 

@@ -66,7 +66,15 @@ func main() {
 	flag.Parse()
 
 	if len(filepath) == 0 {
-		fmt.Fprintf(os.Stderr, "You must specify the filepath for your vim config file for keybinding or the path of init.vim \nUsage for Linux user: vimtovscodekeybinding [--filename <path>]\nUsage for Windows user: vimtovscodekeybinding.exe [--filename <path>]")
+		fmt.Fprintf(os.Stderr, "You must specify the filepath for your vim config file for keybinding or the path of init.vim \nUsage: %s [--filename <path>]", os.Args[0])
+		// fmt.Fprintf(os.Stderr, "You must specify the filepath for your vim config file for keybinding or the path of init.vim \nUsage for Linux user: vimtovscodekeybinding [--filename <path>]\nUsage for Windows user: vimtovscodekeybinding.exe [--filename <path>]")
+		// fmt.Println("OS:", runtime.GOOS)
+		// switch runtime.GOOS {
+		// case "linux":
+		// 	fmt.Fprint(os.Stderr, "Warnning: You must specify the filepath for your vim config file for keybinding or the path of init.vim \nUsage for Linux user: \nvimtovscodekeybinding --filename <path>")
+		// case "windows":
+		// 	fmt.Fprint(os.Stderr, "Warnning: You must specify the filepath for your vim config file for keybinding or the path of init.vim \nUsage for Windows user: \nvimtovscodekeybinding.exe --filename <path>")
+		// }
 		// fmt.Errorf("You must specify the filepat of your init.vim: %v", os.Stderr)
 		// filepath = "lab.vim"
 		return
