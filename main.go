@@ -105,8 +105,14 @@ func main() {
 		}
 		currentLine := strings.Fields(scanner.Text())
 		matchArr := strings.SplitN(strings.Join(currentLine, " "), " ", 3)
-
+		if matchArr[0] != "imap" && matchArr[0] != "inoremap" && matchArr[0] != "nmap" && matchArr[0] != "nnoremap" && matchArr[0] != "vmap" && matchArr[0] != "vnoremap" {
+			continue
+		}
+		fmt.Println("matchArr", matchArr)
 		if strings.Contains(matchArr[1], "silent") && strings.Contains(matchArr[1], "expr") {
+			continue
+		}
+		if strings.Contains(matchArr[2], ":") {
 			continue
 		}
 		if mode, ok := modeMap[matchArr[0]]; ok {
