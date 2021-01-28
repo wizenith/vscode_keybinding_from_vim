@@ -5,7 +5,7 @@
 
 ![demo1](https://i.imgur.com/yQz3IGO.png)
 
-![demo2](https://i.imgur.com/Tjl7ctM.gif)
+![demo2](https://i.imgur.com/aybNeW6.gif)
 OS Platform Support for Windows, Linux and OSX
 ### **Usage as below:**
 ### Go
